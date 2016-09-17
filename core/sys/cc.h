@@ -47,7 +47,7 @@
 
 #include "contiki-conf.h"
 #include "sys/cc-gcc.h"
-
+#include "sys/cc-ccs.h"
 /**
  * Configure if the C compiler supports the "register" keyword for
  * function arguments.
