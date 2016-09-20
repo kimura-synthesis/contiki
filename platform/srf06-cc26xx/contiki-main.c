@@ -85,11 +85,11 @@ fade(unsigned char l)
 
     leds_on(l);
     for(i = 0; i < j; ++i) {
-      __asm("nop");
+      __asm(" nop");
     }
     leds_off(l);
     for(i = 0; i < 400 - j; ++i) {
-      __asm("nop");
+      __asm(" nop");
     }
   }
 }
