@@ -107,6 +107,8 @@ lock_config(uint32_t status)
 void
 watchdog_init(void)
 {
+  // Enable stall for debug
+  ti_lib_watchdog_stall_enable();
   ti_lib_watchdog_reload_set(CONTIKI_WATCHDOG_TIMER_TOP);
   lock_config(LOCK_REGISTERS_UNLOCKED);
 }
